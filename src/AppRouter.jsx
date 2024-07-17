@@ -7,11 +7,13 @@ import {
 
 import App from "./App";
 import LandingPage from "./Pages/LandingPage";
+import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 
 const routeDefinitions = createRoutesFromElements(
   <Route path="/" element={<App />}>
     <Route index element={<LandingPage />} />
+    <Route path="/projects" element={<Projects />} />
     <Route path="/contact" element={<Contact />} />
   </Route>
 );
