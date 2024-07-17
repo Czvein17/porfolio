@@ -11,8 +11,8 @@ function Tooltip({ message, children }) {
   );
 }
 
-Tooltip.prototypes = {
-  message: PropTypes.string,
+Tooltip.propTypes = {
+  message: PropTypes.string.isRequired,
   children: PropTypes.element,
 };
 
