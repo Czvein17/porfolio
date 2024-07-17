@@ -51,7 +51,11 @@ const LandingPage = () => {
           </Tooltip>
 
           <Tooltip message="Linkedin">
-            <Icon icon={FaLinkedin} link="https://github.com" color={"#000"} />
+            <Icon
+              icon={FaLinkedin}
+              link="https://www.linkedin.com/in/czvein-lei-unarce-47645828b"
+              color={"#000"}
+            />
           </Tooltip>
         </div>
       </div>
