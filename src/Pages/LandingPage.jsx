@@ -3,6 +3,7 @@ import Typing from "react-typing-effect";
 // import resume from "../assets/resume.pdf";
 import avatar from "../assets/avatarNOBG.png";
 import Icon from "../Components/Icon";
+import Tooltip from "../Components/Tooltip";
 
 const LandingPage = () => {
   return (
@@ -25,10 +26,33 @@ const LandingPage = () => {
           bored or stuck in coding, I enjoy playing games.
         </p>
         <div className="flex gap-6 pt-4">
-          <Icon icon={FaFacebook} link="https://www.facebook.com/LeiDump1" />
-          <Icon icon={FaGithub} link="https://github.com/czvein17" />
-          <Icon icon={FaInstagram} link="https://www.instagram.com/ccziiii/" />
-          <Icon icon={FaLinkedin} link="https://github.com" />
+          <Tooltip message="Facebook">
+            <Icon
+              icon={FaFacebook}
+              link="https://www.facebook.com/LeiDump1"
+              color={"#000"}
+            />
+          </Tooltip>
+
+          <Tooltip message="Github">
+            <Icon
+              icon={FaGithub}
+              link="https://github.com/czvein17"
+              color={"#000"}
+            />
+          </Tooltip>
+
+          <Tooltip message="Instagram">
+            <Icon
+              icon={FaInstagram}
+              link="https://www.instagram.com/ccziiii/"
+              color={"#000"}
+            />
+          </Tooltip>
+
+          <Tooltip message="Linkedin">
+            <Icon icon={FaLinkedin} link="https://github.com" color={"#000"} />
+          </Tooltip>
         </div>
       </div>
 
