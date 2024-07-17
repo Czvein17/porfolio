@@ -13,6 +13,7 @@ import Contact from "./Pages/Contact";
 const routeDefinitions = createRoutesFromElements(
   <Route path="/" element={<App />}>
     <Route index element={<LandingPage />} />
+    <Route path="/about" element={<Projects />} />
     <Route path="/projects" element={<Projects />} />
     <Route path="/contact" element={<Contact />} />
   </Route>

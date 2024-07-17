@@ -34,6 +34,13 @@ const NavBar = () => {
           </NavLink>
 
           <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? active : inActive)}
+          >
+            About
+          </NavLink>
+
+          <NavLink
             to="/projects"
             className={({ isActive }) => (isActive ? active : inActive)}
           >
@@ -65,6 +72,15 @@ const NavBar = () => {
               >
                 Home
               </NavLink>
+
+              <NavLink
+                to="/about"
+                className={({ isActive }) => (isActive ? active : inActive)}
+                onClick={() => setIsMenuOpen(false)} // Close the menu when a link is clicked
+              >
+                About
+              </NavLink>
+
               <NavLink
                 to="/projects"
                 className={({ isActive }) => (isActive ? active : inActive)}
@@ -72,6 +88,7 @@ const NavBar = () => {
               >
                 Projects
               </NavLink>
+
               <NavLink
                 to="/contact"
                 className={({ isActive }) => (isActive ? active : inActive)}
