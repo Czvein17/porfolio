@@ -1,7 +1,5 @@
 import PropTypes from "prop-types";
 
-import Tooltip from "./Tooltip";
-
 const Icon = ({ icon: IconComponent, link, size = 35, color }) => {
   return (
     <div className="relative inline-block">

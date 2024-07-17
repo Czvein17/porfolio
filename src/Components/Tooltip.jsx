@@ -1,4 +1,6 @@
-export default function Tooltip({ message, children }) {
+import PropTypes from "prop-types";
+
+function Tooltip({ message, children }) {
   return (
     <div className="group relative flex justify-center items-center">
       {children}
@@ -8,3 +10,10 @@ export default function Tooltip({ message, children }) {
     </div>
   );
 }
+
+Tooltip.prototypes = {
+  message: PropTypes.string,
+  children: PropTypes.element,
+};
+
+export default Tooltip;
