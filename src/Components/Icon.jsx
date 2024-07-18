@@ -2,12 +2,8 @@ import PropTypes from "prop-types";
 
 const Icon = ({ icon: IconComponent, link, size = 35, color }) => {
   return (
-    <div className="relative inline-block">
-      <a
-        href={link}
-        target="_blank"
-        className="hover:bg-[red] w-[24px] h-[24px]"
-      >
+    <div className="relative inline-block ">
+      <a href={link} target="_blank">
         <IconComponent size={size} color={color} />
       </a>
     </div>

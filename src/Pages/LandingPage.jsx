@@ -7,13 +7,13 @@ import Tooltip from "../Components/Tooltip";
 
 const LandingPage = () => {
   return (
-    <div className="flex flex-col-reverse items-center lg:flex-row lg:w-[80%] lg:h-full  lg:justify-between">
+    <div className="h-auto flex flex-col-reverse items-center xl:flex-row lg:w-[80%] xl:h-full  lg:justify-between ">
       <div className="p-10 flex flex-col gap-4 justify-center items-center lg:justify-start lg:items-start lg:w-5/12 ">
         <Typing
-          text={["Czvein Lei Unarce"]}
-          className="text-3xl lg:text-5xl font-bold text-[#686D76]"
+          text={["Czvein Lei Unarce", "Web Developer"]}
+          className="text-3xl lg:text-5xl font-bold text-[#3D3B40]"
           speed={200}
-          eraseSpeed={50}
+          eraseSpeed={100}
           eraseDelay={2000}
           typingDelay={500}
         />
@@ -25,7 +25,7 @@ const LandingPage = () => {
           especially sci-fi, action, adventure, and kdrama genres. When I feel
           bored or stuck in coding, I enjoy playing games.
         </p>
-        <button className="border-2 border-black text-black px-4 py-2 rounded-lg w-[210px] transition-all   hover:bg-black hover:text-white">
+        <button className="shadow-md border-2 border-black text-black px-4 py-2 rounded-xl w-[210px] transition-all hover:bg-black hover:text-white">
           Download CV
         </button>
 
@@ -64,7 +64,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="rounded-full h-[300px] w-[300px] bg-[#F6F5F2] overflow-hidden md:h-[400px] md:w-[400px] lg:h-[600px] lg:w-[600px]">
+      <div className="rounded-full h-[300px] w-[300px] bg-[#F6F5F2]  overflow-hidden md:h-[400px] md:w-[400px] lg:h-[600px] lg:w-[600px]">
         <img src={avatar} alt="avatar" className="max-w-full h-auto" />
       </div>
     </div>
