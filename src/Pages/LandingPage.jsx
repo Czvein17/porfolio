@@ -85,20 +85,20 @@ const LandingPage = () => {
         onAnimationComplete={() => setAnimationPhase("container")}
       >
         <Typing
-          text={["Czvein Lei Unarce", "Web Developer"]}
+          text={["Czvein Lei Unarce", "Web Developer", "BSIT Student"]}
           className="text-3xl lg:text-5xl font-bold text-[#3D3B40]"
           speed={100}
           eraseSpeed={100}
           eraseDelay={2000}
           typingDelay={500}
         />
-        <h4 className="text-xl font-semibold ">BSIT Student</h4>
+
         <p className="text-center text-lg font-normal lg:text-justify ">
           Hello there, I&apos;m Czvein (you can call me Lei). Currently, I am
-          studying BSIT at PHINMA Saint Jude College, currently a 2nd-year
-          student. I want to be a fullstack developer. I love watching movies,
-          especially sci-fi, action, adventure, and kdrama genres. When I feel
-          bored or stuck in coding, I enjoy playing games.
+          studying BSIT at PHINMA Saint Jude, currently a 2nd-year student. I
+          want to be a fullstack developer. I love watching movies, especially
+          sci-fi, action, adventure, and kdrama genres. When I feel bored or
+          stuck in coding, I enjoy playing games.
         </p>
 
         <button className="shadow-md border-2 border-black text-black px-4 py-2 rounded-xl w-[210px] transition-all hover:bg-black hover:text-white">
