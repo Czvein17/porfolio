@@ -1,9 +1,17 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+
+import CustomNavLink from "./CustomNavLink";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navItems = [
+    { path: "/", label: "Home" },
+    { path: "/about", label: "About" },
+    { path: "/projects", label: "Projects" },
+    { path: "/contact", label: "Contact" },
+  ];
 
   const inActive =
     "w-[100px] h-[35px] text-center flex items-center rounded-[18px] gap-2 justify-center transition-all ease-in-out  duration-300 hover:bg-[#151515] hover:text-white hover:font-bold";
@@ -28,33 +36,16 @@ const NavBar = () => {
         </button>
 
         <ul className="hidden md:flex gap-10 text-md">
-          <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? active : inActive)}
-          >
-            Home
-          </NavLink>
-
-          <NavLink
-            to="/about"
-            className={({ isActive }) => (isActive ? active : inActive)}
-          >
-            About
-          </NavLink>
-
-          <NavLink
-            to="/projects"
-            className={({ isActive }) => (isActive ? active : inActive)}
-          >
-            Projects
-          </NavLink>
-
-          <NavLink
-            to={"/contact"}
-            className={({ isActive }) => (isActive ? active : inActive)}
-          >
-            Contact
-          </NavLink>
+          {navItems.map((item) => (
+            <CustomNavLink
+              key={item.path}
+              to={item.path}
+              inActive={inActive}
+              active={active}
+            >
+              {item.label}
+            </CustomNavLink>
+          ))}
         </ul>
       </nav>
 
@@ -67,37 +58,16 @@ const NavBar = () => {
             </button>
 
             <ul className="flex flex-col gap-10 text-md">
-              <NavLink
-                to="/"
-                className={({ isActive }) => (isActive ? active : inActive)}
-                onClick={() => setIsMenuOpen(false)} // Close the menu when a link is clicked
-              >
-                Home
-              </NavLink>
-
-              <NavLink
-                to="/about"
-                className={({ isActive }) => (isActive ? active : inActive)}
-                onClick={() => setIsMenuOpen(false)} // Close the menu when a link is clicked
-              >
-                About
-              </NavLink>
-
-              <NavLink
-                to="/projects"
-                className={({ isActive }) => (isActive ? active : inActive)}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Projects
-              </NavLink>
-
-              <NavLink
-                to="/contact"
-                className={({ isActive }) => (isActive ? active : inActive)}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
-              </NavLink>
+              {navItems.map((item) => (
+                <CustomNavLink
+                  key={item.path}
+                  to={item.path}
+                  inActive={inActive}
+                  active={active}
+                >
+                  {item.label}
+                </CustomNavLink>
+              ))}
             </ul>
           </div>
         </div>

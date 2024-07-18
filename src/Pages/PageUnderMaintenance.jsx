@@ -8,7 +8,7 @@ export const PageUnderMaintenance = () => {
         alt="Logo"
         className="mb-8 h-40"
       />
-      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center  mb-4">
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4">
         Page under construction
       </h1>
       <p className="text-center text-lg md:text-xl lg:text-2xl mb-8">
