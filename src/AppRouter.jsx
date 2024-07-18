@@ -10,13 +10,18 @@ import LandingPage from "./Pages/LandingPage";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 
+import NotFound404 from "./Pages/NotFound404";
+
 const routeDefinitions = createRoutesFromElements(
-  <Route path="/" element={<App />}>
-    <Route index element={<LandingPage />} />
-    <Route path="/about" element={<Projects />} />
-    <Route path="/projects" element={<Projects />} />
-    <Route path="/contact" element={<Contact />} />
-  </Route>
+  <>
+    <Route path="/" element={<App />}>
+      <Route index element={<LandingPage />} />
+      <Route path="/about" element={<Projects />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/contact" element={<Contact />} />
+    </Route>
+    <Route path="*" element={<NotFound404 />} />
+  </>
 );
 
 const router = createBrowserRouter(routeDefinitions);

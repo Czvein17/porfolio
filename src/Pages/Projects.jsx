@@ -1,5 +1,7 @@
+import { PageUnderMaintenance } from "./PageUnderMaintenance";
+
 const Projects = () => {
-  return <div>Displaying SOON</div>;
+  return <PageUnderMaintenance />;
 };
 
 export default Projects;
