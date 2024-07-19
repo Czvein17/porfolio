@@ -123,7 +123,7 @@ const Skills = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        className="flex flex-col lg:flex-row justify-center items-center gap-10 p-5"
+        className="flex flex-col lg:flex-row justify-center items-center gap-5 p-5"
       >
         <Cards title={"Frontend"} Icon={FaTerminal}>
           {feSkills.map((skill) => (
@@ -134,7 +134,7 @@ const Skills = () => {
             />
           ))}
         </Cards>
-        `
+
         <Cards title={"Backend"} Icon={FaCodeBranch}>
           {beSkills.map((skill) => (
             <SkillsCard
