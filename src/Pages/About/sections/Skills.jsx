@@ -99,7 +99,7 @@ const Skills = () => {
   const containerVariants = {
     visible: {
       transition: {
-        // delayChildren: 0.1,
+        delayChildren: 0.3,
         staggerChildren: 0.2,
       },
     },
