@@ -134,7 +134,7 @@ const Skills = () => {
             />
           ))}
         </Cards>
-
+        `
         <Cards title={"Backend"} Icon={FaCodeBranch}>
           {beSkills.map((skill) => (
             <SkillsCard
@@ -144,7 +144,6 @@ const Skills = () => {
             />
           ))}
         </Cards>
-
         <Cards title={"Others"} Icon={FaBrain}>
           {otherSkill.map((skill) => (
             <SkillsCard

@@ -64,43 +64,45 @@ const AboutMe = () => {
         </motion.div>
       </div>
 
-      <motion.div
-        className="h-screen lg:w-[60%] flex items-center p-5"
-        initial={{ x: "10vw", opacity: 0 }}
-        whileInView={{
-          x: 0,
-          opacity: 1,
-          transition: { duration: 1, ease: "easeOut" },
-        }}
-      >
+      <div className="h-screen lg:w-[60%] flex items-center p-5">
         <div className=" h-auto p-5 gap-6 flex flex-col items-center text-center lg:w-2/3  lg:justify-center lg:items-start lg:text-left ">
-          <h1 className="text-3xl font-bold ">ABOUT ME</h1>
-          <p className="text-lg font-normal">
-            <strong>Hi, I am Czvein Lei, 18 years old.</strong>
-            <br />
-            I am a 2nd-year student studying Information Technology at PHINMA
-            Saint Jude. My goal is to become a full stack developer, proficient
-            in both frontend and backend technologies.
-            <br />
-            <br />
-            Currently, I am honing my skills in various programming languages
-            and frameworks, including React, Tailwind, SCSS, Express, Mongodb
-            backend integrations. I have a strong passion for creating seamless
-            user experiences and developing efficient, scalable applications.
-          </p>
+          <motion.div
+            initial={{ x: "10vw", opacity: 0 }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+              transition: { duration: 1, ease: "easeOut" },
+            }}
+          >
+            <h1 className="text-3xl font-bold ">ABOUT ME</h1>
+            <p className="text-lg font-normal">
+              <strong>Hi, I am Czvein Lei, 18 years old.</strong>
+              <br />
+              I am a 2nd-year student studying Information Technology at PHINMA
+              Saint Jude. My goal is to become a full stack developer,
+              proficient in both frontend and backend technologies.
+              <br />
+              <br />
+              Currently, I am honing my skills in various programming languages
+              and frameworks, including React, Tailwind, SCSS, Express, Mongodb
+              backend integrations. I have a strong passion for creating
+              seamless user experiences and developing efficient, scalable
+              applications.
+            </p>
 
-          <ul className="flex flex-col justify-center items-center lg:items-start gap-1 text-lg ">
-            <li className="flex gap-2 items-center">
-              <FaEnvelope size={20} />
-              <strong>Email: </strong>
-              czveinlei17@gmail.com
-            </li>
-            <li className="flex gap-2 items-center">
-              <FaPhoneAlt size={20} />
-              <strong>Phone: </strong>
-              099-121-59668
-            </li>
-          </ul>
+            <ul className="flex flex-col justify-center items-center lg:items-start gap-1 text-lg ">
+              <li className="flex gap-2 items-center">
+                <FaEnvelope size={20} />
+                <strong>Email: </strong>
+                czveinlei17@gmail.com
+              </li>
+              <li className="flex gap-2 items-center">
+                <FaPhoneAlt size={20} />
+                <strong>Phone: </strong>
+                099-121-59668
+              </li>
+            </ul>
+          </motion.div>
 
           <motion.ul
             className="flex lg:flex-row flex-col justify-center items-center gap-5"
@@ -120,7 +122,7 @@ const AboutMe = () => {
             ))}
           </motion.ul>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };
