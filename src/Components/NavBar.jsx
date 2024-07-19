@@ -18,11 +18,12 @@ const NavBar = () => {
   const active = `${inActive} bg-black text-white  font-bold`;
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((prevMenuOpen) => !prevMenuOpen);
+    console.log(isMenuOpen);
   };
 
   return (
-    <header className="lg:fixed top-0 left-0 z-10 px-[5%] w-full h-[70px] flex justify-between items-center font-sans shadow-md">
+    <header className="lg:fixed top-0 left-0 z-50 px-[5%] w-full h-[70px] flex justify-between items-center font-sans shadow-md bg-white">
       <h1 className={`${active}`}>It&apos;s Me</h1>
 
       <nav className="navbar">
@@ -64,6 +65,7 @@ const NavBar = () => {
                   to={item.path}
                   inActive={inActive}
                   active={active}
+                  onClick={toggleMenu}
                 >
                   {item.label}
                 </CustomNavLink>

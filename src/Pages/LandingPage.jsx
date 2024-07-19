@@ -76,7 +76,7 @@ const LandingPage = () => {
   ];
 
   return (
-    <div className="h-auto flex flex-col-reverse items-center xl:flex-row lg:w-[80%] xl:h-full  lg:justify-between ">
+    <div className="flex flex-col-reverse justify-center items-center xl:flex-row lg:w-[80%] xl:h-full  lg:justify-between">
       <motion.div
         className="p-10 flex flex-col gap-4 justify-center items-center lg:justify-start lg:items-start lg:w-5/12 "
         variants={parentVariants}
@@ -85,7 +85,7 @@ const LandingPage = () => {
         onAnimationComplete={() => setAnimationPhase("container")}
       >
         <Typing
-          text={["Czvein Lei Unarce", "Web Developer", "BSIT Student"]}
+          text={["Czvein Lei Unarce", "Web Developer", "BSIT Student", "Gamer"]}
           className="text-3xl lg:text-5xl font-bold text-[#3D3B40]"
           speed={100}
           eraseSpeed={100}
