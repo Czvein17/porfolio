@@ -90,7 +90,7 @@ const AboutMe = () => {
               applications.
             </p>
 
-            <ul className="flex flex-col justify-center items-center lg:items-start gap-1 text-lg ">
+            <ul className="flex flex-col justify-center items-center lg:items-start gap-1 text-lg my-2 py-2">
               <li className="flex gap-2 items-center">
                 <FaEnvelope size={20} />
                 <strong>Email: </strong>
