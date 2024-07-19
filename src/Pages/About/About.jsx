@@ -8,8 +8,8 @@ const About = () => {
       <AboutMe />
       <Skills />
       <Education />
-      {/* <Me /> */}
       <Footer />
+      {/* <Me /> */}
     </div>
   );
 };

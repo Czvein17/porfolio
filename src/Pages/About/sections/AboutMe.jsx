@@ -64,7 +64,7 @@ const AboutMe = () => {
         </motion.div>
       </div>
 
-      <div className="h-screen lg:w-[60%] flex items-center p-5">
+      <div className="h-auto lg:w-[60%] flex items-center p-5">
         <div className=" h-auto p-5 gap-6 flex flex-col items-center text-center lg:w-2/3  lg:justify-center lg:items-start lg:text-left ">
           <motion.div
             initial={{ x: "10vw", opacity: 0 }}

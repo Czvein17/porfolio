@@ -18,7 +18,7 @@ const TimelineItem = ({ date, education, title, content }) => {
 
 const Education = () => {
   return (
-    <div className="w-full lg:h-[auto]  my-10 p-5 box-border flex flex-col justify-center items-center">
+    <div className="w-full lg:h-[auto]   py-10 box-border flex flex-col justify-center items-center">
       <h1 className="text-3xl">Education</h1>
       <section className="timeline-section">
         <div className="timeline-items">
