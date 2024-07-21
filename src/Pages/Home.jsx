@@ -1,7 +1,7 @@
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Typing from "react-typing-effect";
-// import resume from "../assets/resume.pdf";
+
+import SOCIALS from "../Socials/Socials";
 
 import avatar from "../assets/avatarNOBG.png";
 import SocialsIconAnimation from "../Components/Animation/SocialsIconAnimation";
@@ -48,35 +48,8 @@ const Home = () => {
     },
   };
 
-  const socialIcons = [
-    {
-      icon: FaFacebook,
-      link: "https://www.facebook.com/LeiDump1",
-      color: "#000",
-      message: "Facebook",
-    },
-    {
-      icon: FaGithub,
-      link: "https://github.com/czvein17",
-      color: "#000",
-      message: "Github",
-    },
-    {
-      icon: FaInstagram,
-      link: "https://www.instagram.com/ccziiii/",
-      color: "#000",
-      message: "Instagram",
-    },
-    {
-      icon: FaLinkedin,
-      link: "https://www.linkedin.com/in/czvein-lei-unarce-47645828b",
-      color: "#000",
-      message: "Linkedin",
-    },
-  ];
-
   return (
-    <div className="flex flex-col-reverse justify-center items-center xl:flex-row lg:w-[80%] xl:h-full  lg:justify-between ">
+    <div className="flex flex-col-reverse justify-center items-center xl:flex-row lg:w-[80%] xl:h-full h-screen lg:justify-between ">
       <motion.div
         className="p-10 flex flex-col gap-5 justify-center items-center lg:justify-start lg:items-start lg:w-5/12 "
         variants={parentVariants}
@@ -117,7 +90,7 @@ const Home = () => {
           initial="hidden"
           animate={animationPhase === "container" ? "show" : "hidden"}
         >
-          {socialIcons.map((icon, index) => (
+          {SOCIALS.map((icon, index) => (
             <SocialsIconAnimation
               key={index}
               icon={icon.icon}

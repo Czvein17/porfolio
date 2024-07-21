@@ -74,7 +74,7 @@ const AboutMe = () => {
               transition: { duration: 1, ease: "easeOut" },
             }}
           >
-            <h1 className="text-3xl font-bold ">ABOUT ME</h1>
+            <h1 className="text-3xl font-bold mb-8">ABOUT ME</h1>
             <p className="text-lg font-normal">
               <strong>Hi, I am Czvein Lei,</strong>
               <br />

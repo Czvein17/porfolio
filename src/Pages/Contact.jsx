@@ -1,39 +1,12 @@
 import { useRef, useState } from "react";
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import emailjs from "emailjs-com";
+
+import SOCIALS from "../Socials/Socials";
 
 import Icon from "../Components/Icon";
 import Tooltip from "../Components/Tooltip";
 
-const socialIcons = [
-  {
-    icon: FaFacebook,
-    link: "https://www.facebook.com/LeiDump1",
-    color: "#000",
-    message: "Facebook",
-  },
-  {
-    icon: FaGithub,
-    link: "https://github.com/czvein17",
-    color: "#000",
-    message: "Github",
-  },
-  {
-    icon: FaInstagram,
-    link: "https://www.instagram.com/ccziiii/",
-    color: "#000",
-    message: "Instagram",
-  },
-  {
-    icon: FaLinkedin,
-    link: "https://www.linkedin.com/in/czvein-lei-unarce-47645828b",
-    color: "#000",
-    message: "Linkedin",
-  },
-];
-
 const Contact = () => {
-  console.log("Rendered");
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
@@ -85,7 +58,7 @@ const Contact = () => {
   errorMessage && console.log(errorMessage);
 
   return (
-    <div className="h-auto w-full flex  justify-center items-center px-5">
+    <div className="h-auto w-full flex  justify-center items-center px-5 ">
       <div className="flex flex-col lg:flex-row gap-4 lg:justify-center w-full py-5">
         <div className="basis-1/3 flex flex-col  justify-center gap-10 p-5 lg:items-start items-center">
           <h1 className="text-5xl font-bold pb-7 drop-shadow-2xl shadow-black uppercase">
@@ -105,7 +78,7 @@ const Contact = () => {
           </div>
 
           <div className="flex gap-6 lg:justify-normal justify-center">
-            {socialIcons.map((icon, index) => (
+            {SOCIALS.map((icon, index) => (
               <Tooltip key={index} message={icon.message}>
                 <Icon
                   key={index}
@@ -129,20 +102,19 @@ const Contact = () => {
                 type="text"
                 name="name"
                 placeholder="Name"
-                className="flex-grow w-full p-5 bg-[#f5f5f5] shadow-md"
+                className="flex-grow w-full p-5 bg-[#F6F5F2] shadow-md"
               />
               <input
                 type="email"
                 name="email"
                 placeholder="Email"
-                className="flex-grow w-full p-5 bg-[#f5f5f5] shadow-md"
+                className="flex-grow w-full p-5 bg-[#F6F5F2] shadow-md"
               />
             </div>
 
             <textarea
-              className="p-5 resize-none bg-[#f5f5f5] shadow-md"
+              className="p-5 resize-none bg-[#F6F5F2] shadow-md"
               name="message"
-              id=""
               cols="30"
               rows="10"
               placeholder="Message"
