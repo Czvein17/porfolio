@@ -7,7 +7,7 @@ import avatar from "../assets/avatarNOBG.png";
 import SocialsIconAnimation from "../Components/Animation/SocialsIconAnimation";
 import { useState } from "react";
 
-const LandingPage = () => {
+const Home = () => {
   const [animationPhase, setAnimationPhase] = useState("parent");
 
   const parentVariants = {
@@ -16,7 +16,7 @@ const LandingPage = () => {
       x: 0,
       transition: {
         type: "spring",
-        duration: 0.3,
+        duration: 0.5,
         ease: "easeInOut",
       },
     },
@@ -42,8 +42,8 @@ const LandingPage = () => {
     visible: {
       scale: 1,
       transition: {
-        duration: 0.2,
-        ease: "easeIn",
+        duration: 0.5,
+        ease: "easeOut",
       },
     },
   };
@@ -76,9 +76,9 @@ const LandingPage = () => {
   ];
 
   return (
-    <div className="flex flex-col-reverse justify-center items-center xl:flex-row lg:w-[80%] xl:h-full  lg:justify-between">
+    <div className="flex flex-col-reverse justify-center items-center xl:flex-row lg:w-[80%] xl:h-full  lg:justify-between ">
       <motion.div
-        className="p-10 flex flex-col gap-4 justify-center items-center lg:justify-start lg:items-start lg:w-5/12 "
+        className="p-10 flex flex-col gap-5 justify-center items-center lg:justify-start lg:items-start lg:w-5/12 "
         variants={parentVariants}
         initial="hidden"
         animate="visible"
@@ -93,7 +93,7 @@ const LandingPage = () => {
           typingDelay={500}
         />
 
-        <p className="text-center text-lg font-normal lg:text-justify ">
+        <p className="text-center text-lg font-normal lg:text-justify py-2">
           Hello there, I&apos;m Czvein (you can call me Lei). Currently, I am
           studying BSIT at PHINMA Saint Jude, currently a 2nd-year student. I
           want to be a fullstack developer. I love watching movies, especially
@@ -101,9 +101,15 @@ const LandingPage = () => {
           stuck in coding, I enjoy playing games.
         </p>
 
-        <button className="shadow-md border-2 border-black text-black px-4 py-2 rounded-xl w-[210px] transition-all hover:bg-black hover:text-white">
-          Download CV
-        </button>
+        <a
+          href="https://drive.google.com/file/d/1Cf-gBsYVpfaUdRWOLPdC3WmiQk3jVkgj/view?usp=drive_link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="shadow-md border-2 border-black px-4 py-2 rounded-xl w-[230px] transition-all bg-black text-white hover:bg-transparent hover:text-black">
+            Download CV
+          </button>
+        </a>
 
         <motion.div
           className="flex gap-6 pt-4"
@@ -128,7 +134,7 @@ const LandingPage = () => {
         variants={popupVariants}
         initial="hidden"
         animate="visible"
-        className="rounded-full h-[300px] w-[300px] bg-[#F6F5F2]  overflow-hidden md:h-[400px] md:w-[400px] lg:h-[600px] lg:w-[600px]"
+        className="rounded-full h-[300px] w-[300px] bg-[#F6F5F2]  overflow-hidden md:h-[400px] md:w-[400px] lg:h-[600px] lg:w-[600px] drop-shadow-xl"
       >
         <img src={avatar} alt="avatar" className="max-w-full h-auto" />
       </motion.div>
@@ -136,4 +142,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default Home;

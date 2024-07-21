@@ -1,17 +1,28 @@
 import PropTypes from "prop-types";
 
-import "./timeline.css";
+import { motion } from "framer-motion";
+
+import "../../../assets/Styles/timeline.css";
 
 const TimelineItem = ({ date, education, title, content }) => {
   return (
     <div className="timeline-item">
       <div className="timeline-dot"></div>
-      <div className="timeline-date">{date}</div>
-      <div className="timeline-content shadow-md">
-        <h3>{title}</h3>
-        <h6>{education}</h6>
-        <p>{content}</p>
-      </div>
+      <motion.div
+        initial={{ x: "-10vw", opacity: 0 }}
+        whileInView={{
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, ease: "easeOut" },
+        }}
+      >
+        <div className="timeline-date">{date}</div>
+        <div className="timeline-content shadow-md">
+          <h3>{title}</h3>
+          <h6>{education}</h6>
+          <p>{content}</p>
+        </div>
+      </motion.div>
     </div>
   );
 };
@@ -28,6 +39,7 @@ const Education = () => {
             education="Tertiary Education"
             content="Pursuing a Bachelor of Science in Information Technology"
           />
+
           <TimelineItem
             date="2021 - 2023"
             title="San Francisco High School"

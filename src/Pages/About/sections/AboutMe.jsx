@@ -76,18 +76,18 @@ const AboutMe = () => {
           >
             <h1 className="text-3xl font-bold ">ABOUT ME</h1>
             <p className="text-lg font-normal">
-              <strong>Hi, I am Czvein Lei, 18 years old.</strong>
+              <strong>Hi, I am Czvein Lei,</strong>
               <br />
-              I am a 2nd-year student studying Information Technology at PHINMA
-              Saint Jude. My goal is to become a full stack developer,
+              a 2nd-year student, studying Information Technology at PHINMA
+              Saint Jude College. My goal is to become a full stack developer,
               proficient in both frontend and backend technologies.
               <br />
               <br />
               Currently, I am honing my skills in various programming languages
-              and frameworks, including React, Tailwind, SCSS, Express, Mongodb
-              backend integrations. I have a strong passion for creating
-              seamless user experiences and developing efficient, scalable
-              applications.
+              and frameworks including React, Tailwind, SCSS, Express, and
+              Mongodb backend integrations. I also have a strong passion for
+              creating seamless user experiences and developing efficient, and
+              scalable applications.
             </p>
 
             <ul className="flex flex-col justify-center items-center lg:items-start gap-1 text-lg my-2 py-2">

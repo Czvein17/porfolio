@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Icon = ({ icon: IconComponent, link, size = 35, color }) => {
+const Icon = ({ icon: IconComponent, link, size = 40, color = "black" }) => {
   return (
     <div className="relative inline-block ">
       <a href={link} target="_blank">

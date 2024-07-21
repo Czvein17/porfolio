@@ -14,8 +14,8 @@ const NavBar = () => {
   ];
 
   const inActive =
-    "w-[100px] h-[35px] text-center flex items-center rounded-[18px] gap-2 justify-center transition-all ease-in-out  duration-300 hover:bg-[#151515] hover:text-white hover:font-bold";
-  const active = `${inActive} bg-black text-white  font-bold`;
+    "w-[100px] h-[35px] text-center flex items-center font-bold rounded-[18px] uppercase gap-2 justify-center transition-all ease-in-out  duration-300 hover:bg-[#151515] hover:text-white";
+  const active = `${inActive} bg-black text-white`;
 
   const toggleMenu = () => {
     setIsMenuOpen((prevMenuOpen) => !prevMenuOpen);

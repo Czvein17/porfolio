@@ -1,4 +1,3 @@
-import Footer from "../../Components/Footer";
 import AboutMe from "./sections/AboutMe";
 import Education from "./sections/Education";
 import Skills from "./sections/Skills";
@@ -8,7 +7,6 @@ const About = () => {
       <AboutMe />
       <Skills />
       <Education />
-      <Footer />
       {/* <Me /> */}
     </div>
   );
