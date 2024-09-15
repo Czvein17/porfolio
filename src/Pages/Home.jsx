@@ -74,12 +74,7 @@ const Home = () => {
           stuck in coding, I enjoy playing games.
         </p>
 
-        <a
-          // href="https://drive.google.com/file/d/1Cf-gBsYVpfaUdRWOLPdC3WmiQk3jVkgj/view?usp=drive_link"
-          href="/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="/" target="_blank" rel="noopener noreferrer">
           <button className="shadow-md border-2 border-black px-4 py-2 rounded-xl w-[230px] transition-all bg-black text-white hover:bg-transparent hover:text-black">
             Download CV
           </button>
