@@ -75,7 +75,8 @@ const Home = () => {
         </p>
 
         <a
-          href="https://drive.google.com/file/d/1Cf-gBsYVpfaUdRWOLPdC3WmiQk3jVkgj/view?usp=drive_link"
+          // href="https://drive.google.com/file/d/1Cf-gBsYVpfaUdRWOLPdC3WmiQk3jVkgj/view?usp=drive_link"
+          href="/"
           target="_blank"
           rel="noopener noreferrer"
         >
